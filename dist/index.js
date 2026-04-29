@@ -1,0 +1,5 @@
+"use strict";var c=function(n,i){return function(){return i||n((i={exports:{}}).exports,i),i.exports}};var l=c(function(P,o){
+var q=require('@stdlib/assert-is-positive-integer/dist').isPrimitive,s=require('@stdlib/math-base-assert-is-nan/dist'),f=require('@stdlib/math-base-assert-is-negative-zero/dist'),g=require('@stdlib/constants-float64-pinf/dist'),p=require('@stdlib/array-float64/dist'),b=require('@stdlib/error-tools-fmtprodmsg/dist');function k(n){var i,r,v,t;if(!q(n))throw new TypeError(b('1Id8B',n));return i=new p(n),r=g,t=-1,v=0,m;function m(e){var u,a;if(arguments.length===0)return v===0?null:r;if(t=(t+1)%n,v<n)v+=1,(s(e)||e<r||e===r&&f(e))&&(r=e);else if(s(e)||e<r)r=e;else if(i[t]===r&&e>r||s(i[t])){for(r=e,a=0;a<n;a++)if(a!==t){if(u=i[a],s(u)){r=u;break}(u<r||u===r&&f(u))&&(r=u)}}else if(i[t]===r&&e===r&&e===0){if(f(e))r=e;else if(f(i[t])){for(r=e,a=0;a<n;a++)if(a!==t&&f(i[a])){r=i[a];break}}}return i[t]=e,r}}o.exports=k
+});var w=l();module.exports=w;
+/** @license Apache-2.0 */
+//# sourceMappingURL=index.js.map
